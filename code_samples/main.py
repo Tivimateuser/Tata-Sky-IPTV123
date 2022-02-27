@@ -12,7 +12,7 @@ while True:
 
     s = utils.getPrintNote()
     print(s if logged_in != "true" else "")
-    print("Credits: Gaurav Thakkar (My Github is: https://github.com/ForceGT)" if logged_in != "true" else "")
+    print("Credits: ST (My Github is: https://github.com/Sanju2105)" if logged_in != "true" else "")
     print("====================================")
     print(" Login Status: " + logged_in)
     print("====================================")
@@ -25,15 +25,8 @@ while True:
     print("\n")
     ch = int(input("Enter your choice:"))
 
-    if ch == 1:
-        rmn = str(input("Enter your Registered Mobile Number without the country code: "))
-        sid = str(input("Enter your Subscriber Id: "))
-        pwd = str(input("Enter your password: "))
-        print("Trying to Login with password ............")
-        print("\n \n")
-        print("*************************************")
-        login.loginWithPass(sid=sid, rmn=rmn, pwd=pwd)
-    elif ch == 2:
+   
+    if ch == 2:
         rmn = str(input("Enter your Registered Mobile No without the Country Code: "))
         sid = str(input("Enter your Subscriber Id: "))
         login.generateOTP(sid=sid, rmn=rmn)
